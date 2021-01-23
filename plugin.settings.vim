@@ -32,11 +32,11 @@ let g:clap_theme = 'atom_dark'
 map <leader>cp :Clap<CR>
 
 " LaTex
-"let g:tex_flavor='latex'
-"let g:vimtex_quickfix_mode=0
-"set conceallevel=1
-"let g:tex_conceal='abdmg'
-"let g:vimtex_view_general_viewer = 'open'
+let g:tex_flavor='xelatex'
+let g:vimtex_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'
+let g:vimtex_view_general_viewer = 'open'
 
 " Markdown
 let g:vim_markdown_math = 1
@@ -90,3 +90,16 @@ let g:tagbar_type_markdown = {
     \ 'sort': 0,
 \ }
 
+
+" Snippets
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.vimrc.d/snippets']
+let g:UltiSnipsEditSplit="vertical"
+
+" Clang-format
+let g:clang_format#auto_format = 1
+autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+nmap <Leader>C :ClangFormatAutoToggle<CR>
