@@ -10,6 +10,7 @@ noremap k gk
 let mapleader=","
 
 noremap <leader>- :sp<CR>
-noremap <leader>= :vsp<CR>
+noremap <leader>_ :vsp<CR>
+noremap <leader>= :terminal<CR>
 noremap <leader>+ :tabe<CR>
 

@@ -22,7 +22,8 @@ set undofile
 set undodir=~/.vim/.undo//
 set noerrorbells
 set linebreak
-colorscheme onedark
+set background=dark 
+colorscheme solarized 
 
 " Encoding
 set langmenu=zh_CN.UTF-8

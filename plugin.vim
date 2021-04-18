@@ -16,10 +16,8 @@ Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'majutsushi/tagbar'
-Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'preservim/nerdcommenter'
-Plug 'rhysd/vim-clang-format'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'SirVer/ultisnips'
-Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown'}
 
 call plug#end()

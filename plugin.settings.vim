@@ -10,7 +10,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'default'
-let g:airline_theme='onedark'
+let g:airline_theme='solarized'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#coc#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
@@ -28,7 +28,7 @@ let g:syntastic_check_on_wq = 0
 map <leader>nt :NERDTreeToggle<CR>
 
 " Clap
-let g:clap_theme = 'atom_dark'
+let g:clap_theme = 'solarized_dark'
 map <leader>cp :Clap<CR>
 
 " LaTex
@@ -75,21 +75,20 @@ let g:tagbar_type_json = {
     \ },
     \ 'sort' : 0
     \ }
+
 let g:tagbar_type_markdown = {
-    \ 'ctagstype': 'markdown',
-    \ 'ctagsbin' : '/Users/louis/.vim/external/markdown2ctags/markdown2ctags.py',
-    \ 'ctagsargs' : '-f - --sort=yes',
+    \ 'ctagstype' : 'markdown',
     \ 'kinds' : [
-        \ 's:sections',
-        \ 'i:images'
-    \ ],
-    \ 'sro' : '|',
-    \ 'kind2scope' : {
-        \ 's' : 'section',
-    \ },
-    \ 'sort': 0,
+        \ 'h:Chapter',
+        \ 'i:Section',
+        \ 'k:Paragraph',
+        \ 'j:Subparagraph'
+    \ ]
 \ }
 
+let g:airline#extensions#wordcount#enabled = 1
+
+let g:vim_markdown_folding_disabled = 1
 
 " Snippets
 let g:UltiSnipsExpandTrigger = '<tab>'
