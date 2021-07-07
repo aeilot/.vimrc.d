@@ -13,4 +13,9 @@ noremap <leader>- :sp<CR>
 noremap <leader>_ :vsp<CR>
 noremap <leader>= :terminal<CR>
 noremap <leader>+ :tabe<CR>
+noremap <leader>md :MundoToggle<CR>
 
+nnoremap <expr> n  'Nn'[v:searchforward]
+nnoremap <expr> N  'nN'[v:searchforward]
+
+nnoremap <leader>l :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
